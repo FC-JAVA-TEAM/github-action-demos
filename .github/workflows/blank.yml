@@ -1,0 +1,14 @@
+name: simple workflow for initial test
+# this is the trigger point of the workflow 
+on: workflow_dispatch
+# jobs where workflow can perform after this is gona trigger
+jobs:
+  first-job:
+  # this is the env were this is going to run
+    runs-on: ubantu-latest
+    steps:
+      - name: Pring greeting message
+        run: echo "hello first git hub action"
+        
+      - name: Pring goodby message
+        run: echo "goodby"

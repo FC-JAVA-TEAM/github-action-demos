@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   first-job:
   # this is the env were this is going to run
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Pring greeting message
         run: echo "hello first git hub action"
